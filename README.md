@@ -1,4 +1,4 @@
-  <img src="img/g-gif-update.gif" width="640" title="termux" alt="fakeroot">
+<p align="center"><img src="img/g-gif-update.gif" width="640" title="termux" alt="fakeroot">
 <H4 align="center">
 Emulate chroot, bind mount and binfmt_misc for non-root users
 </H4>
