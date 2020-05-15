@@ -1,0 +1,2 @@
+# termux-fakeroot
+Termux fakeroot
