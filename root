@@ -1,0 +1,50 @@
+#!/usr/bin/bash
+usage() {
+echo -e "\e[30m"
+echo -e " \033[47m TERMUX ROOT \033[00m"
+echo -e "\e[m -------------"
+echo -e "\e[m  usage: root <\e[33moptions\e[m> <\e[33marguments\e[m>"
+echo -e "\e[m"
+echo -e "\e[m  options:                     descriptions:"
+echo -e "\e[m -------------------------------------------------------"
+echo -e "\e[m  su, superuser                \e[31mmake current user as root"
+echo -e "\e[m  install <\e[33mpackage name\e[m>       \e[31minstall package as root"
+echo -e "\e[m  uninstall <\e[33mpackage name\e[m>     \e[31muninstall package as root"
+echo -e "\e[m  remove <\e[33mdir/file\e[m>            \e[31mremove dir or file as root"
+echo -e "\e[m  chmod <\e[33mfile\e[m>                 \e[31mgiving access as root"
+echo -e "\e[m"
+echo -e "\e[m  arguments:                   example:"
+echo -e "\e[m -------------------------------------------------------"
+echo -e "\e[m  <\e[33mpackage name\e[m>               \e[31mroot install python"
+echo -e "\e[m  <\e[33mdir/file\e[m>                   \e[31mroot remove /usr/bin"
+echo -e "\e[m  <\e[33mfile\e[m>                       \e[31mroot chmod myfiles"
+echo -e "\e[m"
+echo -e "\e[m  copyright©2020 by saydog"
+echo -e "\e[m"
+exit
+}
+
+ARGS=$(printf '%q ' "$@")
+
+if [ -z "$*" ]; then
+        usage
+elif [ $1 == "su" ]; then
+        proot -0
+	rm -rf '?' &> /dev//null
+elif [ $1 == "superuser" ]; then
+        proot -0
+	rm -rf '?' &> /dev//null
+elif [ $1 == "--help" ]; then
+        usage
+elif [ $1 == "install" ]; then
+        proot apt install $2
+elif [ $1 == "uninstall" ]; then
+        proot apt remove $2
+elif [ $1  == "remove" ]; then
+        proot rm -rf $2
+elif [ $1 == "chmod" ]; then
+        proot chmod +x $2
+else
+	echo "Command not found: root --help"
+        rm -rf '?' &> /dev//null
+fi
