@@ -2,17 +2,14 @@
 <H4 align="center">
 Emulate chroot, bind mount and binfmt_misc for non-root users
 </H4>
-<p align="center">
-sources <a href="https://github.com/termux/proot">termux-proot</a><p>
+<p align="center">sources <a href="https://github.com/termux/proot">termux-proot</a><p>
 <a href="https://github.com/saydog"><img alt="Version" src="https://img.shields.io/badge/Version-1-brightgreen"/></a>
 <a href="https://github.com/saydog"><img alt="Language" src="https://img.shields.io/badge/Language-Bash-brightgreen"/></a>
 </br>
 <a href="https://github.com/saydog"><img alt="dependencies" src="https://img.shields.io/badge/Dependencies-proot-lightgrey"/></a>
 <a href="https://youtube.com/saydog-official"><img alt="Youtube" src="https://img.shields.io/badge/Youtube-SAYDOG-orange"/></a>
 <a href="https://instagram.com/saydog.official"><img alt="Instagram" src="https://img.shields.io/badge/Instagram-Saydog.official-orange"/></a>
-</p>
-<p align="center">
-<img src="img/termux-fakeroot.png" width="640" title="fakeroot" alt="fakeroot">
+<img src="img/termux-fakeroot.png" width="640" title="fakeroot" alt="fakeroot"><p>
 Coded by <a href="https://instagram.com/iqbalmh18">Iqbalmh18</a>
 </p>
 
